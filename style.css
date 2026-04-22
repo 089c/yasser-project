@@ -2,28 +2,15 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* خلفية متدرجة (Gradient) تعطي حياة بدلاً من اللون السادة */
-    background: linear-gradient(135deg, #7289da 0%, #a672da 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden; /* يمنع ظهور شريط التمرير */
 }
-
-/* في حال كنت تريد استخدام الصورة التي أرسلتها سابقاً */
-/* امسح الكود أعلاه واستخدم هذا (تأكد أن اسم الصورةbg.png): */
-/*
-body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-image: url('bg.png');
-    background-size: cover;
-    background-position: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-}
-*/
 
 .background-container {
+    /* سطر الخلفية المعدل ليتناسب مع اسم الصورة المرفوعة */
+    background-image: url('How-To-Get-Your-Discord-Token.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -32,46 +19,25 @@ body, html {
 }
 
 .content-card {
-    background-color: #fff;
+    background-color: white;
     padding: 35px 50px;
     border-radius: 15px;
-    /* ظل أعمق (أكثر عمقاً) لبروز الكرت وجعله "يحيى" */
     box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     text-align: center;
-    margin-top: 150px;
+    margin-top: 180px; /* النزول اللي طلبته */
     width: 350px;
 }
 
-h1 {
-    color: #23272a;
-    margin-bottom: 20px;
-    font-size: 2.2rem;
-    font-weight: bold;
-}
-
+/* باقي التنسيقات للعنوان والزر... */
+h1 { color: #23272a; margin-bottom: 20px; font-size: 2.2rem; }
 .main-btn {
     background-color: transparent;
     color: #23272a;
     border: 1px solid #ced4da;
     padding: 10px 30px;
     border-radius: 25px;
-    font-size: 1rem;
-    cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    transition: all 0.3s ease; /* إضافة تأثير انتقالي سلس */
+    transition: 0.3s;
 }
-
-/* تأثير التمرير (Hover) على الزر لإضافة حيوية */
-.main-btn:hover {
-    background-color: #f1f1f1;
-    border-color: #7289da;
-    color: #7289da;
-    transform: translateY(-2px); /* رفعة بسيطة للزر */
-}
-
-.footer-text {
-    margin-top: 15px;
-    font-size: 0.75rem;
-    color: #99aab5;
-}
+.main-btn:hover { background-color: #f8f9fa; border-color: #7289da; transform: translateY(-2px); }
